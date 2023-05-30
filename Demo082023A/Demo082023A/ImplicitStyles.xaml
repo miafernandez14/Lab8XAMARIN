@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demo082023A.ImplicitStyles">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+                <Setter Property="BackgroundColor" Value="Red" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="0,20,0,0">
+            <Entry Text="Soy Estudiante del C24B" />
+            <Entry Text="Mi nombre es:"/>
+            <Entry Text="Mia Fernandez Tarrillo" />
+            <Entry Text="Por favor, no copiar copiar." 
+                   BackgroundColor="Purple" TextColor="LightGreen" />
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
